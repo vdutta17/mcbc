@@ -1,0 +1,12 @@
+{
+  "name"         : "node-mcbc",
+  "version"      : "0.0.0",
+  "description"  : "MCBC application.",
+  "main"         : "server.js",
+  "author"       : "Varun",
+  "dependencies" : {
+    "express"    : "~4.7.2",
+	"body-parser": "~1.5.2",
+	"method-override": "~2.1.2"
+  }
+}
