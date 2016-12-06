@@ -1,0 +1,174 @@
+[
+  {
+    "type": "sv",
+    "filelocation": "service_2_old.JPG",
+    "name": "Black BoB",
+    "description" :"Black BoB",
+    "id" : "bbbob",
+    "imageGallery": [
+        {
+          "url" : "../img1/blackbobpics/bob1.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob1.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/blackbobpics/bob2.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob2.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/blackbobpics/bob3.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob3.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/blackbobpics/bob4.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob4.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/blackbobpics/bob5.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob5.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/blackbobpics/bob6.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob6.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/blackbobpics/bob7.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob7.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/blackbobpics/bob8.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob8.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/blackbobpics/bob9.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob9.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/blackbobpics/bob10.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob10.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/blackbobpics/bob11.jpg",
+          "bubbleUrl" : "../img1/blackbobpics/bob11.jpg",
+          "extUrl" : ""
+      }
+    ]
+  },
+  {
+    "type": "sv",
+    "filelocation": "service_2_old.JPG",
+    "name": "BoBjr Avenger",
+    "description" :"BoBjr Avenger",
+    "id" : "bobjr",
+    "imageGallery": [
+        {
+          "url" : "../img1/bobjr_avenger/avenger1.jpg",
+          "bubbleUrl" : "../img1/bobjr_avenger/avenger1.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/bobjr_avenger/avenger2.jpg",
+          "bubbleUrl" : "../img1/bobjr_avenger/avenger2.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/bobjr_avenger/avenger3.jpg",
+          "bubbleUrl" : "../img1/bobjr_avenger/avenger3.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/bobjr_avenger/avenger4.jpg",
+          "bubbleUrl" : "../img1/bobjr_avenger/avenger4.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/bobjr_avenger/avenger5.jpg",
+          "bubbleUrl" : "../img1/bobjr_avenger/avenger5.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/bobjr_avenger/avenger6.jpg",
+          "bubbleUrl" : "../img1/bobjr_avenger/avenger6.jpg",
+          "extUrl" : ""
+      }
+   ]
+
+  },
+  {
+    "type": "sv",
+    "filelocation": "service_3.JPG",
+    "name": "Memento",
+    "description" :"Memento",
+    "id":"memento",
+    "imageGallery": [
+        {
+          "url" : "../img1/memento/memento1.jpg",
+          "bubbleUrl" : "../img1/memento/memento1.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/memento/memento2.jpg",
+          "bubbleUrl" : "../img1/memento/memento2.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/memento/memento3.jpg",
+          "bubbleUrl" : "../img1/memento/memento3.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/memento/memento4.jpg",
+          "bubbleUrl" : "../img1/memento/memento4.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/memento/memento5.jpg",
+          "bubbleUrl" : "../img1/memento/memento5.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/memento/memento6.jpg",
+          "bubbleUrl" : "../img1/memento/memento6.jpg",
+          "extUrl" : ""
+      }
+   ]
+  },
+  {
+    "type": "sv",
+    "filelocation": "service_4.JPG",
+    "name": "Sepoy Turbo",
+    "description" :"Sepoy Turbo",
+    "id": "sepoyturbo",
+    "imageGallery": [
+        {
+          "url" : "../img1/sepoyturbo/sepoyturbo1.jpg",
+          "bubbleUrl" : "../img1/sepoyturbo/1.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/sepoyturbo/sepoyturbo2.jpg",
+          "bubbleUrl" : "../img1/sepoyturbo/2.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/sepoyturbo/sepoyturbo3.jpg",
+          "bubbleUrl" : "../img1/sepoyturbo/3.jpg",
+          "extUrl" : ""
+      },
+      {
+          "url" : "../img1/sepoyturbo/sepoyturbo4.jpg",
+          "bubbleUrl" : "../img1/sepoyturbo/4.jpg",
+          "extUrl" : ""
+      }
+    ]
+  }
+ ]

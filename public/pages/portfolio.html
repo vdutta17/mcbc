@@ -8,14 +8,18 @@
         </div>
         <div class="row">
              <div class="col-md-4 col-sm-6 portfolio-item" ng-repeat="record in records">
-                <a href="#" class="portfolio-link" data-toggle="modal">
+                <a href="javascript:void(0)" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
-                    </div>
-                    <img src="img1/{{record.filelocation}}" class="img-responsive" alt="">
+                    </div>   
+                    
                 </a>
+                <img src="img1/{{record.filelocation}}" class="img-responsive12" alt="" ng-click="openGallery()">
+                <ng-image-gallery images="images" methods="methods" data-id="{{record.id}}" conf="conf" thumbnails="thumbnails" inline="inline" bubbles="bubbles" img-bubbles="imgBubbles" bg-close="bgClose" on-open="opened();" on-close="closed();" bg-close="true"></ng-image-gallery> 
+                <!--  <ng-image-gallery images="images" methods="methods" conf="conf" on-open="opened();" on-close="closed();"></ng-image-gallery>-->
+
                 <div class="portfolio-caption">
                     <h4>{{record.name}}</h4>
                     <p class="text-muted">({{record.description}})</p>
@@ -23,4 +27,4 @@
             </div>
         </div>
     </div>
-</section>                        
+</section>          
