@@ -22,6 +22,12 @@
 				controller  : 'aboutController'
 			})
 
+      // route for the contact page
+      .when('/video', {
+        templateUrl : 'pages/video.html',
+        controller  : 'videoController'
+      })
+
 			// route for the contact page
 			.when('/contact', {
 				templateUrl : 'pages/contactus.html',
@@ -35,150 +41,30 @@
 			});
 	});
 
+        
+
+
 	// create the controller and inject Angular's $scope
 	mcbcApp.controller('mainController', function($scope, $timeout, $interval) {
 		// Home page nothing to display
-		$scope.viewname="Welcome To Our Studio!"
-		$scope.viewdescription="It's Nice To Meet You"
-		$scope.btndescription="Tell Me More"
+		$scope.viewname="Welcome To Our Studio!";
+		$scope.viewdescription="It's Nice To Meet You";
+		$scope.btndescription="Tell Me More";
+    $scope.counter = 5;
+        var counterIntvl = $interval(function(){
+          $scope.counter = $scope.counter - 1;
+          if($scope.counter == 0){
+            $interval.cancel(counterIntvl);
+          }
+        }, 1000);
 		
 		// Local images
 		$scope.images = [
-			  {
-          "url" : "../img1/blackbobpics/bob1.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob1.jpg",
-          "extUrl" : ""
-      },
       {
-          "url" : "../img1/blackbobpics/bob2.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob2.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/blackbobpics/bob3.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob3.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/blackbobpics/bob4.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob4.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/blackbobpics/bob5.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob5.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/blackbobpics/bob6.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob6.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/blackbobpics/bob7.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob7.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/blackbobpics/bob8.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob8.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/blackbobpics/bob9.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob9.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/blackbobpics/bob10.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob10.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/blackbobpics/bob11.jpg",
-          "bubbleUrl" : "../img1/blackbobpics/bob11.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/bobjr_avenger/1.jpg",
-          "bubbleUrl" : "../img1/bobjr_avenger/1.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/bobjr_avenger/2.jpg",
-          "bubbleUrl" : "../img1/bobjr_avenger/2.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/bobjr_avenger/3.jpg",
-          "bubbleUrl" : "../img1/bobjr_avenger/3.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/bobjr_avenger/4.jpg",
-          "bubbleUrl" : "../img1/bobjr_avenger/4.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/bobjr_avenger/5.jpg",
-          "bubbleUrl" : "../img1/bobjr_avenger/5.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/bobjr_avenger/6.jpg",
-          "bubbleUrl" : "../img1/bobjr_avenger/6.jpg",
-          "extUrl" : ""
-      },
-       {
-          "url" : "../img1/memento/1.jpg",
-          "bubbleUrl" : "../img1/memento/1.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/memento/2.jpg",
-          "bubbleUrl" : "../img1/memento/2.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/memento/3.jpg",
-          "bubbleUrl" : "../img1/memento/3.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/memento/4.jpg",
-          "bubbleUrl" : "../img1/memento/4.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/memento/5.jpg",
-          "bubbleUrl" : "../img1/memento/5.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/memento/6.jpg",
-          "bubbleUrl" : "../img1/memento/6.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/sepoyturbo/1.jpg",
-          "bubbleUrl" : "../img1/sepoyturbo/1.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/sepoyturbo/2.jpg",
-          "bubbleUrl" : "../img1/sepoyturbo/2.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/sepoyturbo/3.jpg",
-          "bubbleUrl" : "../img1/sepoyturbo/3.jpg",
-          "extUrl" : ""
-      },
-      {
-          "url" : "../img1/sepoyturbo/4.jpg",
-          "bubbleUrl" : "../img1/sepoyturbo/4.jpg",
-          "extUrl" : ""
-      }
+            title : 'Photo Gallery',
+            alt : 'Photo',
+            url : '../img1/motorcycle-stencil.gif'
+          }
 		];
 
 		/*****************************************************/
@@ -190,37 +76,58 @@
 			bubbles		: 	true,
 			imgBubbles 	: 	false,	
 			bgClose		: 	false,
+      imgAnim : 'fadeup'
 		};
+
+  /*****************************************************/
+   $timeout(function(){
+    
+    }, 5000);
 
 
 		// Gallery methods gateway
 		$scope.methods = {};
 		$scope.openGallery = function(){
-			$scope.images = [];
-			var imageGallery=this.record.imageGallery;
-			for (i = 0; i < imageGallery.length; i++)
-			{
-				var obj = new Object();
-   				obj.url = imageGallery[i].url;
-   				var jsonString= JSON.stringify(obj);
-   				$scope.images.push(obj);
-   			}
-			$scope.methods.open();
+      var length = $scope.images.length;
+      if(length > 1){
+        for (j = 1; j < length; j++){
+          console.log("pop"+j);
+          $scope.images.pop();
+        }
+      }
+      
+      var imageGallery=this.record.imageGallery;
+      for (i = 0; i < imageGallery.length; i++){
+        var obj = new Object();
+          obj.url = imageGallery[i].url;
+          $scope.images.push(obj);
+        }
+         var jsonString= JSON.stringify($scope.images);
+         console.log(jsonString);
+			   $scope.methods.open();
 		};
 
 		// Similar to above function
 		$scope.closeGallery = function(){
 			console.log("closed");
-			$scope.images = [];
-    		$scope.methods.close();
+    //	$scope.methods.close();
 		};
 
 		$scope.closed = function(){
-			console.warn('Gallery closed!');
-			//$scope.images = [];
-		}
+			console.log('Gallery closed!');
+		};
+    // Gallery callbacks
+    $scope.opened = function(){
+          console.log('Gallery opened!');
+    };
 
 	});
+
+  mcbcApp.controller('videoController', function($scope) {
+    // create a message to display in our view
+    $scope.viewname="Videos"
+    $scope.viewdecription = 'Videos';
+  });
 
 	mcbcApp.controller('serviceController', function($scope) {
 		// create a message to display in our view

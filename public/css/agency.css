@@ -205,7 +205,7 @@ fieldset[disabled] .btn-xl.active {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff
+    color: #000
 }
 
 .navbar-default .nav li a:hover,
@@ -228,11 +228,12 @@ fieldset[disabled] .btn-xl.active {
 
 @media (min-width:768px) {
     .navbar-default {
-        background-color: #222;
+        background-color: #f5f5f5;
         padding: 25px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
+        min-height:90px;
         border: 0
     }
     .navbar-default .navbar-brand {
@@ -251,7 +252,12 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em
     }
+    .navbar-nav>li>a {
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }    
 }
+
 
 header {
     background-image: url(../img1/header-bg2.jpg);
@@ -408,9 +414,9 @@ section h3.section-subheading {
     margin: 0
 }
 
-#portfolio * {
+/*#portfolio * {
     z-index: 2
-}
+}*/
 
 #about p{
     font-size: 12px;
@@ -849,6 +855,8 @@ ul.social-buttons li a:active {
     opacity: 0;
     display: none
 }
+
+
 
 ::-moz-selection {
     text-shadow: none;
