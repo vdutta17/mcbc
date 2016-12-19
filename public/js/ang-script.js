@@ -91,7 +91,7 @@
       var length = $scope.images.length;
       if(length > 1){
         for (j = 1; j < length; j++){
-          console.log("pop"+j);
+          //console.log("pop"+j);
           $scope.images.pop();
         }
       }
@@ -103,22 +103,22 @@
           $scope.images.push(obj);
         }
          var jsonString= JSON.stringify($scope.images);
-         console.log(jsonString);
+        // console.log(jsonString);
 			   $scope.methods.open();
 		};
 
 		// Similar to above function
 		$scope.closeGallery = function(){
-			console.log("closed");
-    //	$scope.methods.close();
+			//console.log("closed");
+    	$scope.methods.close();
 		};
 
 		$scope.closed = function(){
-			console.log('Gallery closed!');
+			//console.log('Gallery closed!');
 		};
     // Gallery callbacks
     $scope.opened = function(){
-          console.log('Gallery opened!');
+        //  console.log('Gallery opened!');
     };
 
 	});
